@@ -23,7 +23,7 @@ You will have to prepare the TRS-80 Model 100 to be able to receive a file.
 * Hit F2 to prepare for download, enter a name for the file (without ending, max 6 chars). 
 
 ### On your modern computer
-
+FINISH PROGRAM SO THAT I KNOW WHAT TO TYPE HERE ;)
 
 
 
