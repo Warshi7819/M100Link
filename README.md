@@ -24,3 +24,17 @@ On your modern computer:
 
 
 # Transfering Basic files (.BA)
+Same as for text files. Whatever you do you end up with a file with the .DO ending. You'll have to go into BASIC to "rename" it to a basic file. Let's assume you downloaded a file and named it XYZ. This means that you now have a file called XYZ.DO in the file list. 
+
+Go into BASIC and type the following:
+
+```
+LOAD"XYZ.DO
+SAVE"XYZ.BA
+```
+
+Then exit basic (F8). Back at the main menu you should now see both a XYZ.DO file and a XYZ.BA file. Select the XYZ.BA file and execute it by pressing the ENTER key. 
+
+
+
+
