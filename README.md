@@ -16,7 +16,7 @@ Hook up your TRS-80 Model 100 to your computer using the USB to serial adapter, 
 
 Then on your TRS-80 Model 100:
 * Start the TELECOM program
-* Type the folowing followed by hitting that <enter> key: STAT 88N1E
+* Type the folowing followed by hitting the ENTER key: STAT 88N1E
 * Hit the F4 key to start listening
 * Hit F2 to prepare for download, enter a name for the file (without ending, max 6 chars). 
 
