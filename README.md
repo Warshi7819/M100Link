@@ -14,13 +14,15 @@ Needed equipment:
 ## Transfering Text files (.DO)
 Hook up your TRS-80 Model 100 to your computer using the USB to serial adapter, Null modem cable and a DB9 to DB25 adapter. 
 
-### On your TRS-80 Model 100:
+### On your TRS-80 Model 100
+You will have to prepare the TRS-80 Model 100 to be able to receive a file. 
+
 * Start the TELECOM program
 * Type the folowing followed by hitting the ENTER key: STAT 88N1E
 * Hit the F4 key to start listening
 * Hit F2 to prepare for download, enter a name for the file (without ending, max 6 chars). 
 
-### On your modern computer:
+### On your modern computer
 
 
 
