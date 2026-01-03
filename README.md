@@ -7,14 +7,14 @@ Needed equipment:
 * A TRS-80 Model 100/102 would be nice
 * A modern PC or Laptop with USB 
 * A USB to Serial Adapter
-* A Null modem cable (DB9) - You gotta twist those wires
+* A Null modem cable (DB9) - You gotta twist those wires. Buy one or create your own: http://www.cncsnw.com/NullMdm.htm
 * A DB9 to DB25 adapter - unless you by some magic ended up with a null modem cable that has DB9 on one end and DB25 on the other. 
 
 
 # Transfering Text files (.DO)
-After you hook up your TRS-80 Model to your modern computer:
+Hook up your TRS-80 Model 100 to your computer using the USB to serial adapter, Null modem cable and a DB9 to DB25 adapter. 
 
-On your TRS-80 Model 100:
+Then on your TRS-80 Model 100:
 * Start the TELECOM program
 * Type the folowing followed by hitting that <enter> key: STAT 88N1E
 * Hit the F4 key to start listening
