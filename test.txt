@@ -1,0 +1,21 @@
+M100Link test program!
+
+(C) Retro And Gaming 2026
+
+This beautiful piece of software is
+designed to transfer actual TEXT
+from your modern PC to what was the
+first commercially successfull 
+notebook computer, namely the TRS-80
+Model 100. 
+
+What you need:
+- A TRS-80 Model 100/102 
+  (or compatible)
+- A modern PC with a USB to Serial 
+  Adapter.
+- A null modem cable - remember this
+  or it will end badly i.e. not work. 
+- A db9 to db25 adapter - if your 
+  null modem cable doesn't magically 
+  have a db25 connector on one end.
