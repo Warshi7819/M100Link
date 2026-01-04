@@ -70,7 +70,7 @@ The program you will use to receive a file from your TRS-80 Model 100 is: Receiv
 The program will by default use the "connection string" 58N1E and the first available COM port it finds. Thus if you only have one COM port available receiving a file should be as easy as:
 **python Receive.py --file FileNameHere**
 
-The program will now await transfer of file from your TRS-80 Model 100 and exit when file is recevied.
+The program will now await transfer of a file from your TRS-80 Model 100 and exit when file is recevied.
 
 To see all arguments supported type **python Receive.py -h**
 ```
