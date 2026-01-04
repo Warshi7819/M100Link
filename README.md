@@ -35,7 +35,7 @@ The program will by default use the "connection string" 58N1E and the first avai
 
 The program will now send the file to your TRS-80 Model 100 and exit when done.
 
-To see all arguments supported type python **Send.py -h**
+To see all arguments supported type **python Send.py -h**
 ```
 python .\Send.py -h
 usage: Send.py [-h] --file FILE [--port PORT] [--stat STAT]
@@ -63,7 +63,7 @@ The program will by default use the "connection string" 58N1E and the first avai
 
 The program will now await transfer of file from your TRS-80 Model 100 and exit when file is recevied.
 
-To see all arguments supported type python **Receive.py -h**
+To see all arguments supported type **python Receive.py -h**
 ```
 python .\Receive.py -h
 usage: Receive.py [-h] --file FILE [--port PORT] [--stat STAT]
