@@ -14,6 +14,7 @@
 
 # Python modules
 import argparse
+import sys
 
 # Own modules
 from M100Link import M100Link
@@ -90,7 +91,7 @@ if __name__ == "__main__":
         availablePorts = link.getAvailableComPorts()
         if len(availablePorts) == 0:
             print("No COM ports found, exiting.")
-            exit(1)
+            sys.exit(1)
         else:
             print("Available COM ports:")
             for port in availablePorts:
