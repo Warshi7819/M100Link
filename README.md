@@ -96,11 +96,17 @@ Once you have started Receive.py as explained above you must now initiate the fi
 * Type the folowing followed by hitting the ENTER key: STAT 58N1E
 * Hit the F4 key to start listening
 * Hit F3 to prepare for upload, enter the name of the file to upload (without ending, max 6 chars). Hit ENTER
+* When asked for “Width:” type nothing, just hit ENTER
 
-The file should now be transfered to your modern computer. 
+When the Receive.py program exits the file has been received on your modern computer. 
+
+To get back to the main menu on your TRS-80 Model 100:
+*	Hit F8
+*	Answer Y to the “Disconnect?” question and hit ENTER
+*	HIT F8
 
 ## Transfering Basic files (.BA) To Your TRS-80 Model 100
-Same as for text files. Whatever you do you end up with a file with the .DO ending. So after you have transfered that BASIC program as a text file you'll have to go into BASIC to "rename" it from *.DO to a *.BA (basic) file. Let's assume you downloaded a file and named it XYZ. This means that you now have a file called XYZ.DO in the file list on the main menu. 
+This is the same as for transfering text files. All files you receive on your TRS-80 model 100 will have the file ending .DO. This means that if you are actually sending a BASIC program you will have to go into BASIC to "rename" it from *.DO to a *.BA file to be able to execute it. Let's assume you downloaded a file and named it **XYZ**. This means that you now have a file called **XYZ.DO** in the file list on the main menu. 
 
 To copy it to a .BA file go into BASIC and type the following:
 
@@ -109,7 +115,7 @@ LOAD"XYZ.DO
 SAVE"XYZ.BA
 ```
 
-Then exit basic (F8). Back at the main menu you should now see both a XYZ.DO file and a XYZ.BA file. Select the XYZ.BA file and execute it by pressing the ENTER key. 
+Then exit basic (F8). Back at the main menu you should now see both a XYZ.DO file and a **XYZ.BA** file. Navigate to the XYZ.BA file and execute it by pressing the ENTER key. 
 
 > [!NOTE]
 > To delete a file e.g. the XYZ.DO file go into BASIC and type: KILL "XYZ.DO
@@ -117,4 +123,24 @@ Then exit basic (F8). Back at the main menu you should now see both a XYZ.DO fil
 > [!NOTE]
 > If you want to transfer at BA file from your TRS-80 Model 100 to your modern computer you probably have to rename it to .DO first.
 
+## Demystifying The Connection String
+88N1E you say?
+
+As you saw above the TRS-80 uses the STAT command and a five character long string to specify the connection settings. But what does it all mean?
+These five individual characters are used to define:
+* Char 1: The baud rate (1 = 75, 2 = 110, 3 = 300, 4 = 600, 5 = 1200, 6 = 2400, 7 = 4800, 8 = 9600, 9 = 19200)
+* Char 2: The size of the bit words of data sent over the connection (7 or 8 bit)
+* Char 3: The parity bit used for error checking (E for even, O for odd, N for none, I for ignore)
+* Char 4: The number of stop bits (1 or 2)
+* Char 5: Whether XON/XOFF is enabled (E) or disabled (D).
+
+The default connection string in our program is **58N1E**. This then means:
+* A Baud rate of 1200
+* The word (byte) size in bits, in this case set to 8
+* None parity bit
+* 1 stop bit
+* XON/XOFF Enabled 
+
+> [!NOTE]
+> The connection string must be the same on both your modern computer and your TRS-80 Model 100 or there will be trouble. I set the baud rate to 1200 after getting into trouble with higher speeds. If you still have issues try to set it to 600. 
 
