@@ -129,7 +129,7 @@ Then exit basic (F8). Back at the main menu you should now see both a XYZ.DO fil
 As you saw above the TRS-80 uses the STAT command and a five character long string to specify the connection settings. But what does it all mean?
 These five individual characters are used to define:
 * Char 1: The baud rate (1 = 75, 2 = 110, 3 = 300, 4 = 600, 5 = 1200, 6 = 2400, 7 = 4800, 8 = 9600, 9 = 19200)
-* Char 2: The size of the bit words of data sent over the connection (7 or 8 bit)
+* Char 2: The size of the word (byte) in bits (7 or 8 bit)
 * Char 3: The parity bit used for error checking (E for even, O for odd, N for none, I for ignore)
 * Char 4: The number of stop bits (1 or 2)
 * Char 5: Whether XON/XOFF is enabled (E) or disabled (D).
