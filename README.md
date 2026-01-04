@@ -40,6 +40,6 @@ SAVE"XYZ.BA
 Then exit basic (F8). Back at the main menu you should now see both a XYZ.DO file and a XYZ.BA file. Select the XYZ.BA file and execute it by pressing the ENTER key. 
 
 > [!NOTE]
-> To delete a file e.g. the XYZ.DO file go into BASIC and type: KILL "XYZ.DO"
+> To delete a file e.g. the XYZ.DO file go into BASIC and type: KILL "XYZ.DO
 
 
