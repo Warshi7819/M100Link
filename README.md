@@ -16,7 +16,7 @@ On your modern computer - Ensure that you have Python3 installed and that you ha
 * Send.py
 * Receive.py
 
-## Transfering Text files (.DO) To Your Modern Computer
+## Transfering Text files (.DO) To Your TRS-80 Model 100
 Hook up your TRS-80 Model 100 to your computer using the USB to serial adapter, Null modem cable and a DB9 to DB25 adapter. 
 
 ### On your TRS-80 Model 100
@@ -33,7 +33,7 @@ The utilities you will use are Send.py for sending files to your TRS-80 Model 10
 
 FINISH PROGRAM SO THAT I KNOW WHAT TO TYPE HERE ;)
 
-## Transfering Text files (.DO) To Your TRS-80 Model 100
+## Transfering Text files (.DO) To Your Modern Computer
 Hook up your TRS-80 Model 100 to your computer using the USB to serial adapter, Null modem cable and a DB9 to DB25 adapter. 
 
 
@@ -51,5 +51,6 @@ Then exit basic (F8). Back at the main menu you should now see both a XYZ.DO fil
 
 > [!NOTE]
 > To delete a file e.g. the XYZ.DO file go into BASIC and type: KILL "XYZ.DO
+> If you want to transfer at BA file from your TRS-80 Model 100 to your modern computer you probably have to rename it to .DO first.
 
 
