@@ -45,8 +45,8 @@ Utility to send a file to your TRS-80 Model 100/102.
 options:
   -h, --help   show this help message and exit
   --file FILE  Path to the file to be sent.
-  --port PORT  Serial port to use for sending data (e.g., COM3 or /dev/ttyUSB0). If parameter not specified default port will be the first one
-               found on the system.
+  --port PORT  Serial port to use for sending data (e.g., COM3 or /dev/ttyUSB0). If parameter not specified default port will
+               be the first one found on the system.
   --stat STAT  Serial connection string e.g. 58N1E. If parameter not specified default 58N1E will be used.
 
 Example: python Send.py --file test.txt
