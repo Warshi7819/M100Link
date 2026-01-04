@@ -26,13 +26,12 @@ import os.path
 ############################################################################
 
 class M100Link:
-	
-	"""
-	Constructor - set some default parameters. These are tuned for my TRS-80 Model 100, 
-	your mileage may vary. If you loose data in transfer, try reducing chunkSize and/or
-    increasing pauseBetweenChunk
-	"""
 	def __init__(self):
+		"""
+		Constructor - set some default parameters. These are tuned for my TRS-80 Model 100, 
+		your mileage may vary. If you loose data in transfer, try reducing chunkSize and/or
+		increasing pauseBetweenChunk
+		"""
 		# Chunk size for sending and receiving data
 		self.chunkSize = 20
 		# Pause between sending and receiving chunks in seconds	
@@ -53,7 +52,6 @@ class M100Link:
 		"""
 		ports = serial.tools.list_ports.comports()
 		return ports
-
 
 	def setConnectionString(self, connStr):
 		"""
@@ -117,7 +115,6 @@ class M100Link:
 			"xonXoffEnabled": xonxoffEnabled
 		}
 	
-
 	def getStringChunks(self, content, chunkSize):
 		"""
 		Split a string into chunks of specified size
@@ -147,7 +144,6 @@ class M100Link:
 		Returns:
 			serial port object
 		"""
-
 		print("Using connection string: " + self.connectionString)
 		connParams = self.parseConnectionString(self.connectionString)
 
@@ -186,18 +182,16 @@ class M100Link:
 
 		return s
 
-
-	"""
-	Send a file over the specified serial port
-
-	Arguments:
-		filePath - path to the file to send
-		serialPort - serial port object
-	Returns:
-		None
-	"""
 	def sendFile(self, filePath, comPort):
+		"""
+		Send a file over the specified serial port
 
+		Arguments:
+			filePath - path to the file to send
+			serialPort - serial port object
+		Returns:
+			None
+		"""
 		print("Opening serial port...")
 		serialPort = self.openSerialPort(comPort)
 
@@ -229,17 +223,16 @@ class M100Link:
 		serialPort.close()
 		print("Done")
 
-	"""
-	Receive a file over the specified serial port
-	
-	Arguments:
-		filePath - path to save the received file
-		serialPort - serial port object
-	Returns:
-		None
-	"""
 	def receiveFile(self, filePath, comPort):
-
+		"""
+		Receive a file over the specified serial port
+	
+		Arguments:
+			filePath - path to save the received file
+			serialPort - serial port object
+		Returns:
+			None
+		"""
 		print("Opening serial port...")
 		serialPort = self.openSerialPort(comPort)
 		# Bussy waiting to see if data becomes available over serial
@@ -266,25 +259,3 @@ class M100Link:
 		fp.write(content)
 		fp.flush()
 		fp.close()
-
-
-if __name__ == "__main__":
-	# TEST SENDING FILE
-	link = M100Link()
-	fileToSend = os.path.join(os.getcwd(), "test.txt")
-	availablePorts = link.getAvailableComPorts()
-	
-	if(len(availablePorts) == 0):
-		print("No COM ports available")
-	else:
-		print("Available COM ports:")
-		for port in availablePorts:
-			print(f" - {port.device}: {port.description}")
-	
-		# Just open the first available port - how many com ports do people have these days?
-		print(f"Opening first available port: {availablePorts[0].device}")
-		
-		# Try sending a file
-		link.sendFile(fileToSend, availablePorts[0].device)
-
-

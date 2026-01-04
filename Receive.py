@@ -23,15 +23,20 @@ from M100Link import M100Link
 ############################################################################
 
 class Receive:
-
-    """
-    Constructor
-    """
     def __init__(self):
+        """
+        Constructor
+        """
         pass
 
-
     def getArgumentParser(self):
+        """
+        Create and return the argument parser
+        Arguments:
+            None
+        Returns:
+            ArgumentParser object
+        """
         parser = argparse.ArgumentParser(
             description="Utility to receive a file from your TRS-80 Model 100/102.",
             epilog="Example: python Receive.py --file test.txt"
@@ -60,6 +65,10 @@ class Receive:
 
         return parser
 
+
+""" 
+Main program entry point 
+"""
 if __name__ == "__main__":
     receiver = Receive()
     parser = receiver.getArgumentParser()

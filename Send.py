@@ -23,15 +23,20 @@ from M100Link import M100Link
 ############################################################################
 
 class Send:
-
-    """
-    Constructor
-    """
     def __init__(self):
+        """
+        Constructor
+        """
         pass
 
-
     def getArgumentParser(self):
+        """
+        Create and return the argument parser
+        Arguments:
+            None
+        Returns:
+            ArgumentParser object
+        """
         parser = argparse.ArgumentParser(
             description="Utility to send a file to your TRS-80 Model 100/102.",
             epilog="Example: python Send.py --file test.txt"
@@ -59,6 +64,9 @@ class Send:
         )
         return parser
 
+"""
+Main program entry point
+"""
 if __name__ == "__main__":
     sender = Send()
     parser = sender.getArgumentParser()
