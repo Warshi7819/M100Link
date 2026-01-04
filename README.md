@@ -90,7 +90,7 @@ Once you have started Receive.py as explained above you must now initiate the fi
 
 The file should now be transfered to your modern computer. 
 
-## Transfering Basic files (.BA)
+## Transfering Basic files (.BA) To your TRS-80 Model 100
 Same as for text files. Whatever you do you end up with a file with the .DO ending. So after you have transfered that BASIC program as a text file you'll have to go into BASIC to "rename" it from *.DO to a *.BA (basic) file. Let's assume you downloaded a file and named it XYZ. This means that you now have a file called XYZ.DO in the file list on the main menu. 
 
 To copy it to a .BA file go into BASIC and type the following:
