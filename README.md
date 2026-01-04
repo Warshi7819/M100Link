@@ -52,10 +52,13 @@ options:
 Example: python Send.py --file test.txt
 ```
 ### Back On your TRS-80 Model 100
+If everything worked you will have seen text fly by on your TRS-80 Model 100 as everything is echoed to the screen itself even though it also ends up in the specified file. 
+
 To Exit to the main menu:
 * Hit F8
 * Answer Y to the “Disconnect?” question and hit ENTER
 * Press F8 again and you’ll be back at the main menu.
+
 You should see the newly transferred file in the file list here with the file ending .DO.
 
 ## Transfering Text files (.DO) To Your Modern Computer
