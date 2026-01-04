@@ -51,7 +51,7 @@ options:
 
 Example: python Send.py --file test.txt
 ```
-### On your TRS-80 Model 100
+### Back On your TRS-80 Model 100
 To Exit to the main menu:
 * Hit F8
 * Answer Y to the “Disconnect?” question and hit ENTER
