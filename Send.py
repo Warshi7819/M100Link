@@ -51,6 +51,12 @@ class Send:
             help="Serial port to use for sending data (e.g., COM3 or /dev/ttyUSB0). If parameter not specified default port will be the first one found on the system."
         )
 
+        parser.add_argument(
+            "--stat",
+            type=str,
+            required=False,
+            help="Serial connection string e.g. 58N1E. If parameter not specified default 58N1E will be used."
+        )
         return parser
 
 if __name__ == "__main__":
@@ -82,5 +88,8 @@ if __name__ == "__main__":
             port = availablePorts[0].device
             print(f"\n\nNo port specified, using first available port: {port}") 
 
+    # If supplied, override default connection string
+    if args.stat:
+        link.setConnectionString(args.stat)
 
     link.sendFile(fileToSend, port)
