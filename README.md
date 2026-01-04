@@ -136,11 +136,11 @@ These five individual characters are used to define:
 
 The default connection string in our program is **58N1E**. This then means:
 * A Baud rate of 1200
-* The word (byte) size in bits, in this case set to 8
+* The word (byte) size is set to 8 bits
 * None parity bit
 * 1 stop bit
 * XON/XOFF Enabled 
 
 > [!NOTE]
-> The connection string must be the same on both your modern computer and your TRS-80 Model 100 or there will be trouble. I set the baud rate to 1200 after getting into trouble with higher speeds. If you still have issues try to set it to 600. 
+> The connection string must be the same on both your modern computer and your TRS-80 Model 100 or there will be trouble. I set the baud rate to 1200 after getting into trouble with higher speeds. If you still have issues try to set it to e.g. 600. 
 
