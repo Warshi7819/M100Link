@@ -1,7 +1,7 @@
 ![M100Link Logo](https://github.com/Warshi7819/M100Link/blob/main/images/logo_arrows_small.png) ![M100Link](https://github.com/Warshi7819/M100Link/blob/main/images/M100Link.png)
 
 ## Overview
-This program enables you to transfer text files to and from your TRS-80 model 100 over serial.
+This program enables you to transfer text files (and Basic programs) to and from your TRS-80 model 100 over serial.
 
 Needed equipment:
 * A TRS-80 Model 100/102 would be nice
