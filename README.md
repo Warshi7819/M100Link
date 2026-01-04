@@ -16,6 +16,9 @@ On your modern computer - Ensure that you have Python3 installed and that you ha
 * Send.py
 * Receive.py
 
+> [!NOTE]
+> As part of the release (right hand side) I have also included frozen binaries for Windows: Receive.exe and Send.exe that will enable you to use this without installing python. The binaries are created by using PyInstaller. 
+
 ## Transfering Text files (.DO) To Your TRS-80 Model 100
 Hook up your TRS-80 Model 100 to your computer using the USB to serial adapter, Null modem cable and a DB9 to DB25 adapter. 
 
