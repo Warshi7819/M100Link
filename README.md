@@ -7,7 +7,7 @@ Needed equipment:
 * A TRS-80 Model 100/102 would be nice
 * A modern PC or Laptop with USB 
 * A USB to Serial Adapter
-* A Null modem cable (DB9) - You gotta twist those wires. Buy one or create your own: http://www.cncsnw.com/NullMdm.htm
+* A Null modem cable (DB9) because you gotta twist those wires. Buy one or create your own: http://www.cncsnw.com/NullMdm.htm
 * A DB9 to DB25 adapter - unless you by some magic ended up with a null modem cable that has DB9 on one end and DB25 on the other. 
 
 
