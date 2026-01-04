@@ -10,8 +10,13 @@ Needed equipment:
 * A Null modem cable (DB9) because you gotta twist those wires. Buy one or create your own: http://www.cncsnw.com/NullMdm.htm
 * A DB9 to DB25 adapter - unless you by some magic ended up with a null modem cable that has DB9 on one end and DB25 on the other. 
 
+## Before we start
+On your modern computer - Ensure that you have Python3 installed and that you have downloaded the following files from this project and placed them in a folder of your choice:
+* M100Link.py
+* Send.py
+* Receive.py
 
-## Transfering Text files (.DO)
+## Transfering Text files (.DO) To Your Modern Computer
 Hook up your TRS-80 Model 100 to your computer using the USB to serial adapter, Null modem cable and a DB9 to DB25 adapter. 
 
 ### On your TRS-80 Model 100
@@ -23,8 +28,13 @@ You will have to prepare the TRS-80 Model 100 to be able to receive a file.
 * Hit F2 to prepare for download, enter a name for the file (without ending, max 6 chars). 
 
 ### On your modern computer
+
+The utilities you will use are Send.py for sending files to your TRS-80 Model 100 and Receive.py for receiving files.
+
 FINISH PROGRAM SO THAT I KNOW WHAT TO TYPE HERE ;)
 
+## Transfering Text files (.DO) To Your TRS-80 Model 100
+Hook up your TRS-80 Model 100 to your computer using the USB to serial adapter, Null modem cable and a DB9 to DB25 adapter. 
 
 
 ## Transfering Basic files (.BA)
