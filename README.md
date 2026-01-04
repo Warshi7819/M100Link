@@ -25,13 +25,30 @@ You will have to prepare the TRS-80 Model 100 to be able to receive a file.
 * Start the TELECOM program
 * Type the folowing followed by hitting the ENTER key: STAT 58N1E
 * Hit the F4 key to start listening
-* Hit F2 to prepare for download, enter a name for the file (without ending, max 6 chars). 
+* Hit F2 to prepare for download, enter a name for the file (without ending, max 6 chars). Hit ENTER
 
 ### On your modern computer
+The program you will use to send a file to your TRS-80 Model 100 is: Send.py
 
-The utilities you will use are Send.py for sending files to your TRS-80 Model 100 and Receive.py for receiving files.
+The program will by default use the "connection string" 58N1E and the first available COM port it finds. Thus if you only have one COM port available it should be as easy as:
+**python Send.py --file FileNameHere**
 
-FINISH PROGRAM SO THAT I KNOW WHAT TO TYPE HERE ;)
+To see all arguments supported type python **Send.py -h**
+```
+python .\Send.py -h
+usage: Send.py [-h] --file FILE [--port PORT] [--stat STAT]
+
+Utility to send a file to your TRS-80 Model 100/102.
+
+options:
+  -h, --help   show this help message and exit
+  --file FILE  Path to the file to be sent.
+  --port PORT  Serial port to use for sending data (e.g., COM3 or /dev/ttyUSB0). If parameter not specified default port will be the first one
+               found on the system.
+  --stat STAT  Serial connection string e.g. 58N1E. If parameter not specified default 58N1E will be used.
+
+Example: python Send.py --file test.txt
+```
 
 ## Transfering Text files (.DO) To Your Modern Computer
 Hook up your TRS-80 Model 100 to your computer using the USB to serial adapter, Null modem cable and a DB9 to DB25 adapter. 
