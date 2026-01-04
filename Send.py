@@ -34,7 +34,7 @@ class Send:
     def getArgumentParser(self):
         parser = argparse.ArgumentParser(
             description="Utility to send a file to your TRS-80 Model 100/102.",
-            epilog="Example: python Send.py --file test.txt --port COM3"
+            epilog="Example: python Send.py --file test.txt"
         )
 
         parser.add_argument(
