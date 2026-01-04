@@ -51,6 +51,12 @@ options:
 
 Example: python Send.py --file test.txt
 ```
+### On your TRS-80 Model 100
+To Exit to the main menu:
+* Hit F8
+* Answer Y to the “Disconnect?” question and hit ENTER
+* Press F8 again and you’ll be back at the main menu.
+You should see the newly transferred file in the file list here with the file ending .DO.
 
 ## Transfering Text files (.DO) To Your Modern Computer
 Hook up your TRS-80 Model 100 to your computer using the USB to serial adapter, Null modem cable and a DB9 to DB25 adapter. 
