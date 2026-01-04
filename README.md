@@ -51,6 +51,8 @@ Then exit basic (F8). Back at the main menu you should now see both a XYZ.DO fil
 
 > [!NOTE]
 > To delete a file e.g. the XYZ.DO file go into BASIC and type: KILL "XYZ.DO
+
+> [!NOTE]
 > If you want to transfer at BA file from your TRS-80 Model 100 to your modern computer you probably have to rename it to .DO first.
 
 
