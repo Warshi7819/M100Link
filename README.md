@@ -82,8 +82,8 @@ Utility to receive a file from your TRS-80 Model 100/102.
 options:
   -h, --help   show this help message and exit
   --file FILE  Filename to save in current directory.
-  --port PORT  Serial port to use for receiving data (e.g., COM3 or /dev/ttyUSB0). If parameter not specified default port will be the first one
-               found on the system.
+  --port PORT  Serial port to use for receiving data (e.g., COM3 or /dev/ttyUSB0). If parameter not specified default port
+               will be the first one found on the system.
   --stat STAT  Serial connection string e.g. 58N1E. If parameter not specified default 58N1E will be used.
 
 Example: python Receive.py --file test.txt
