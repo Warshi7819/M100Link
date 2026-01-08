@@ -22,6 +22,7 @@ import os.path
 # Own modules
 
 # 3rd Party modules
+from tqdm import tqdm # pip install tqdm
 
 ############################################################################
 
@@ -210,12 +211,13 @@ class M100Link:
 		# Relax sending, a few chars at a time with some delay
 		chunks = self.getStringChunks(content, self.chunkSize)
 		print("Sending...")
+		pbar = tqdm(total=len(chunks))
 		for chunk in chunks:
-			print(f"Sending chunk: " + chunk)
 			out = chunk.encode('ascii')
 			serialPort.write(out)
 			time.sleep(self.pauseBetweenChunk)
-		
+			pbar.update(1)	
+		pbar.close()
 
 		serialPort.flush()
 		print("Finalizing. Waiting 2 seconds...")
