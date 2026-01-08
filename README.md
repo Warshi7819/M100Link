@@ -17,6 +17,8 @@ On your modern computer - Ensure that you have Python3 installed and that you ha
 * Receive.py
 
 > [!NOTE]
+> There's currently one 3rdparty dependency that must be installed. This can be done by **pip install tqdm**
+> 
 > As part of the release (right hand side) I have also included frozen binaries for Windows: Receive.exe and Send.exe that will enable you to use this without installing python. The binaries are created by using PyInstaller. 
 
 ## Transfering Text files (.DO) To Your TRS-80 Model 100
