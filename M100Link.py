@@ -36,6 +36,8 @@ class M100Link:
 		# Chunk size for sending and receiving data
 		self.chunkSize = 20
 		# Pause between sending and receiving chunks in seconds	
+		# There at least have to be a delay on receiving, otherwise it will terminate before everything is received
+		# Although it seems to work without deolay on sending on my setup, I kept a small delay there anyway
 		self.pauseBetweenChunk = 0.1
 		# Set Default value for connection string
 		self.connectionString = "58N1E"
