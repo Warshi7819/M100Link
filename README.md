@@ -136,7 +136,7 @@ RUN
 > To delete a file e.g. the XYZ.DO file go into BASIC and type: KILL "XYZ.DO
 
 > [!NOTE]
-> If you want to transfer at BA file from your TRS-80 Model 100 to your modern computer you have to rename it to .DO first. If not you will get NO FILE. Upload Aborted. If you have both a XYZ.DO and a XYZ.BA file it will upload the XYZ.DO file.
+> If you want to transfer at BA file from your TRS-80 Model 100 to your modern computer you have to rename it to .DO first. If not you will get a **No File. Upload Aborted.** error. If you have both a XYZ.DO and a XYZ.BA file on your machine it will choose to upload the **XYZ.DO** file.
 
 ## Screenshot
 ![Action Photo](https://github.com/Warshi7819/M100Link/blob/main/images/example_usage.png)
