@@ -8,7 +8,10 @@ Needed equipment:
 * A modern PC or Laptop with USB 
 * A USB to Serial Adapter
 * A Null modem cable (DB9) because you gotta twist those wires. Buy one or create your own: http://www.cncsnw.com/NullMdm.htm
-* A DB9 to DB25 adapter - unless you by some magic ended up with a null modem cable that has DB9 on one end and DB25 on the other. 
+* A DB9 to DB25 adapter - unless you by some magic ended up with a null modem cable that has DB9 on one end and DB25 on the other.
+
+When everything is hooked up it should look something like this:
+![Cables](https://github.com/Warshi7819/M100Link/blob/main/images/cables.png)
 
 ## Before we start
 On your modern computer - Ensure that you have Python3 installed and that you have downloaded the following files from this project and placed them in a folder of your choice:
