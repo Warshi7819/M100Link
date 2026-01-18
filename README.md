@@ -8,7 +8,10 @@ Needed equipment:
 * A modern PC or Laptop with USB 
 * A USB to Serial Adapter
 * A Null modem cable (DB9) because you gotta twist those wires. Buy one or create your own: http://www.cncsnw.com/NullMdm.htm
-* A DB9 to DB25 adapter - unless you by some magic ended up with a null modem cable that has DB9 on one end and DB25 on the other. 
+* A DB9 to DB25 adapter - unless you by some magic ended up with a null modem cable that has DB9 on one end and DB25 on the other.
+
+When everything is hooked up it should look something like this:
+![Cables](https://github.com/Warshi7819/M100Link/blob/main/images/cables.png)
 
 ## Before we start
 On your modern computer - Ensure that you have Python3 installed and that you have downloaded the following files from this project and placed them in a folder of your choice:
@@ -111,7 +114,7 @@ To get back to the main menu on your TRS-80 Model 100:
 *	HIT F8
 
 ## Transfering Basic files (.BA) To Your TRS-80 Model 100
-This is the same as for transfering text files. All files you receive on your TRS-80 model 100 will have the file ending .DO. This means that if you are actually sending a BASIC program you will have to go into BASIC to "rename" it from *.DO to a *.BA file to be able to execute it. Let's assume you downloaded a file and named it **XYZ**. This means that you now have a file called **XYZ.DO** in the file list on the main menu. 
+This is the same as for transfering text files. All files you receive on your TRS-80 model 100 will have the file ending .DO. This means that if you are actually sending a BASIC program you will have to go into BASIC to "rename" it from *.DO to a *.BA file to be able to execute it from the main menu. Let's assume you downloaded a file and named it **XYZ**. This means that you now have a file called **XYZ.DO** in the file list on the main menu. 
 
 To copy it to a .BA file go into BASIC and type the following:
 
@@ -122,11 +125,18 @@ SAVE"XYZ.BA
 
 Then exit basic (F8). Back at the main menu you should now see both a XYZ.DO file and a **XYZ.BA** file. Navigate to the XYZ.BA file and execute it by pressing the ENTER key. 
 
+If you just want to load the XYZ.DO file in basic and run the program from there you don't need to rename it first. Just enter BASIC and:
+
+```
+LOAD"XYZ.DO
+RUN
+```
+
 > [!NOTE]
 > To delete a file e.g. the XYZ.DO file go into BASIC and type: KILL "XYZ.DO
 
 > [!NOTE]
-> If you want to transfer at BA file from your TRS-80 Model 100 to your modern computer you probably have to rename it to .DO first.
+> If you want to transfer at BA file from your TRS-80 Model 100 to your modern computer you have to rename it to .DO first. If not you will get a **No File. Upload Aborted.** error. If you have both a XYZ.DO and a XYZ.BA file on your machine it will choose to upload the **XYZ.DO** file.
 
 ## Screenshot
 ![Action Photo](https://github.com/Warshi7819/M100Link/blob/main/images/example_usage.png)
