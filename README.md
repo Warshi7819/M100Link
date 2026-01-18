@@ -114,7 +114,7 @@ To get back to the main menu on your TRS-80 Model 100:
 *	HIT F8
 
 ## Transfering Basic files (.BA) To Your TRS-80 Model 100
-This is the same as for transfering text files. All files you receive on your TRS-80 model 100 will have the file ending .DO. This means that if you are actually sending a BASIC program you will have to go into BASIC to "rename" it from *.DO to a *.BA file to be able to execute it. Let's assume you downloaded a file and named it **XYZ**. This means that you now have a file called **XYZ.DO** in the file list on the main menu. 
+This is the same as for transfering text files. All files you receive on your TRS-80 model 100 will have the file ending .DO. This means that if you are actually sending a BASIC program you will have to go into BASIC to "rename" it from *.DO to a *.BA file to be able to execute it from the main menu. Let's assume you downloaded a file and named it **XYZ**. This means that you now have a file called **XYZ.DO** in the file list on the main menu. 
 
 To copy it to a .BA file go into BASIC and type the following:
 
@@ -124,6 +124,13 @@ SAVE"XYZ.BA
 ```
 
 Then exit basic (F8). Back at the main menu you should now see both a XYZ.DO file and a **XYZ.BA** file. Navigate to the XYZ.BA file and execute it by pressing the ENTER key. 
+
+If you just want to load the XYZ.DO file in basic and run the program from there you don't need to rename it first. Just enter BASIC and:
+
+```
+LOAD"XYZ.DO
+RUN
+```
 
 > [!NOTE]
 > To delete a file e.g. the XYZ.DO file go into BASIC and type: KILL "XYZ.DO
