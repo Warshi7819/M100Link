@@ -128,6 +128,10 @@ Then exit basic (F8). Back at the main menu you should now see both a XYZ.DO fil
 > [!NOTE]
 > If you want to transfer at BA file from your TRS-80 Model 100 to your modern computer you probably have to rename it to .DO first.
 
+## Screenshot
+![Action Photo](https://github.com/Warshi7819/M100Link/blob/main/images/example_usage.png)
+
+
 ## Demystifying The Connection String
 88N1E you say?
 
