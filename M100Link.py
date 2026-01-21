@@ -20,9 +20,10 @@ import os
 import os.path
 
 # Own modules
+from ProgressBar import ProgressBar
 
 # 3rd Party modules
-from tqdm import tqdm # pip install tqdm
+
 
 ############################################################################
 
@@ -213,13 +214,12 @@ class M100Link:
 		# Relax sending, a few chars at a time with some delay
 		chunks = self.getStringChunks(content, self.chunkSize)
 		print("Sending...")
-		pbar = tqdm(total=len(chunks))
+		pbar = ProgressBar(len(chunks), True)
 		for chunk in chunks:
 			out = chunk.encode('ascii')
 			serialPort.write(out)
 			time.sleep(self.pauseBetweenChunk)
-			pbar.update(1)	
-		pbar.close()
+			pbar.update()
 
 		serialPort.flush()
 		print("Finalizing. Waiting 2 seconds...")
