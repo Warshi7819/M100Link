@@ -170,3 +170,27 @@ The default connection string in our program is **58N1E**. This then means:
 > [!NOTE]
 > The connection string must be the same on both your modern computer and your TRS-80 Model 100 or there will be trouble. I set the baud rate to 1200 after getting into trouble with higher speeds. If you still have issues try to set it to e.g. 600. 
 
+## BUT BUT.. What about REAL programs? .CO Files?
+The easiest way to transfer programs written in machine language I have found is to use a tiny program called TEENY on your TRS-80 model 100 and a PTDD Emulator on your modern computer (PTDD = Portable Tandy Disk Drive). But there's a slight bootstrapping problem as TEENY is a .CO program as well. To install TEENY you need to follow these super simple steps:
+* Download the [Teeny](https://github.com/bkw777/dl2/blob/master/clients/teeny/TEENY.100) bootstrap BASIC script. Once downloaded, send it over to your TRS-80 Model 100 just like it was a .DO file, load it in basic and run it. Select the default (just hit Enter) when asked difficult question.
+* Once downloaded you will have to re-configure where HIGH MEMORY starts. First we need to figure out the correct number.
+* Enter **?HIMEM:CALL9643**. This will output a bunch of numbers but we are only concerned about the number labeled Top: xxxxx number. For me this was **62213** but yours might differ.
+* To set the new High Memory start location you enter **CLEAR0,TopNumber**. In my case this was: **CLEAR0,62213**
+* You may now start the TEENY.CO program you have installed from the main menu.
+
+At this point you are ready on the TRS-80 Model 100 side of things but there's nothing running on your modern computer yet that TEENY can talk to over serial. You will now have to install a PTDD emulator on you modern computer. Since I like python, and I found a PTDD emulator written in Python, the only one I have actually testet is [MCOMM](https://club100.org/memfiles/index.php?&direction=&order=&directory=Kurt%20McCullum/mComm%20Python). Unpack the .deb package (using 7zip) and find the files you need namely mcomm.py and tpdd.py. It has some flaws on windows but starts up nicely as long as you supply the path it should serve out files from. 
+
+The following command will start it up and serve the files in the current directory: **python .\mcomm.py --path .** Once started you can head over to your TRS-80 model 100 and start using TEENY to download files served out by your modern computer. And yes, this also includes support for downloading .CO files.
+
+> [!NOTE]
+> Using TEENY is as simple as it gets.
+> * To QUIT the program Enter: Q
+> * To Download a file called FILE.DO Enter: L FILE.DO
+> * To Upload a file called FILE.DO Enter: S FILE.DO
+> * To Kill/Destroy/Terminate a file called FILE.DO Enter: K FILE.DO
+
+Other TPDD Emulators that get's talked about more than this one (but I haven't tested yet) can be found [here](http://tandy.wiki/TPDD_server)
+
+## OTHER HIGHLY RELEVANT INFO
+* I just like to tinker and it turns out that there are a lot of people like me. 99% of them seems to be active and part of the M100 mailing list: [Mailing List And Archive](http://lists.bitchin100.com/listinfo.cgi/m100-bitchin100.com). There's also a huge archive there that you can search through as soon as you have joined (free of charge). 
+* A wealth of knowledge can also be found on the Club100 [webpage](http://www.club100.org/) although it can be bit retro and hard to navigate at times.
