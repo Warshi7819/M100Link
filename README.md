@@ -171,7 +171,7 @@ The default connection string in our program is **58N1E**. This then means:
 > The connection string must be the same on both your modern computer and your TRS-80 Model 100 or there will be trouble. I set the baud rate to 1200 after getting into trouble with higher speeds. If you still have issues try to set it to e.g. 600. 
 
 ## BUT BUT.. What about REAL programs? .CO Files?
-The easiest way to transfer programs written in machine language I have found is to use a tiny program called TEENY on your TRS-80 model 100 and a PTDD Emulator on your modern computer (PTDD = Portable Tandy Disk Drive). But there's a slight bootstrapping problem as TEENY is a .CO program as well. To install TEENY you need to follow these super simple steps:
+My program does not handle .CO files as they are a bit tricky. The easiest way to transfer programs written in machine language I have found is to use a tiny program called TEENY on your TRS-80 model 100 and a PTDD Emulator on your modern computer (PTDD = Portable Tandy Disk Drive). But there's a slight bootstrapping problem as TEENY is a .CO program as well! To install TEENY you need to follow these super simple steps:
 * Download the [Teeny](https://github.com/bkw777/dl2/blob/master/clients/teeny/TEENY.100) bootstrap BASIC script. Once downloaded, send it over to your TRS-80 Model 100 just like it was a .DO file, load it in basic and run it. Select the default (just hit Enter) when asked difficult question.
 * Once downloaded you will have to re-configure where HIGH MEMORY starts. First we need to figure out the correct number.
 * Enter **?HIMEM:CALL9643**. This will output a bunch of numbers but we are only concerned about the number labeled Top: xxxxx number. For me this was **62213** but yours might differ.
