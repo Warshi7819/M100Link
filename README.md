@@ -29,7 +29,7 @@ Hook up your TRS-80 Model 100 to your computer using the USB to serial adapter, 
 ### On your TRS-80 Model 100
 You will have to prepare the TRS-80 Model 100 to be able to receive a file. 
 
-* Start the TELECOM program
+* Start the TELCOM program
 * Type the folowing followed by hitting the ENTER key: STAT 58N1E
 * Hit the F4 key to start listening
 * Hit F2 to prepare for download, enter a name for the file (without ending, max 6 chars). Hit ENTER
@@ -99,7 +99,7 @@ Example: python Receive.py --file test.txt
 ### On your TRS-80 Model 100
 Once you have started Receive.py as explained above you must now initiate the file transfer from this side. 
 
-* Start the TELECOM program
+* Start the TELCOM program
 * Type the folowing followed by hitting the ENTER key: STAT 58N1E
 * Hit the F4 key to start listening
 * Hit F3 to prepare for upload, enter the name of the file to upload (without ending, max 6 chars). Hit ENTER
@@ -115,12 +115,15 @@ To get back to the main menu on your TRS-80 Model 100:
 ## Transfering Basic files (.BA) To Your TRS-80 Model 100
 This is the same as for transfering text files. All files you receive on your TRS-80 model 100 will have the file ending .DO. This means that if you are actually sending a BASIC program you will have to go into BASIC to "rename" it from *.DO to a *.BA file to be able to execute it from the main menu. Let's assume you downloaded a file and named it **XYZ**. This means that you now have a file called **XYZ.DO** in the file list on the main menu. 
 
-To copy it to a .BA file go into BASIC and type the following:
+To "copy" it to a .BA file go into BASIC and type the following:
 
 ```
 LOAD"XYZ.DO
 SAVE"XYZ.BA
 ```
+
+> [!NOTE]
+> The process of first loading the .DO file and then saving it to .BA is actually converting the ASCII file to a binary format. When you use LOAD, the BASIC interpreter “tokenizes” the program to make it runnable and take less space.
 
 Then exit basic (F8). Back at the main menu you should now see both a XYZ.DO file and a **XYZ.BA** file. Navigate to the XYZ.BA file and execute it by pressing the ENTER key. 
 
@@ -135,7 +138,12 @@ RUN
 > To delete a file e.g. the XYZ.DO file go into BASIC and type: KILL "XYZ.DO
 
 > [!NOTE]
-> If you want to transfer at BA file from your TRS-80 Model 100 to your modern computer you have to rename it to .DO first. If not you will get a **No File. Upload Aborted.** error. If you have both a XYZ.DO and a XYZ.BA file on your machine it will choose to upload the **XYZ.DO** file.
+> If you want to transfer at BA file from your TRS-80 Model 100 to your modern computer you have to save it to .DO first. If not you will get a **No File. Upload Aborted.** error. If you have both a XYZ.DO and a XYZ.BA file on your machine it will choose to upload the **XYZ.DO** file.
+
+> [!NOTE]
+> You may also load a program in binary format .BA or ascii .DO directly from the BASIC interpreter over serial and execute it when done by issuing the command: **LOAD "COM:58N1E",R**
+> 
+> Once a program is loaded you can also of course save it as a RAM file using the **SAVE "<filename>"** command. If you want to save the program as pure ASCII you can use the **SAVE "<filename",A** command. Where the trailing ,A specified exactly that.  
 
 ## Screenshot
 ![Action Photo](https://github.com/Warshi7819/M100Link/blob/main/images/example_usage.png)
