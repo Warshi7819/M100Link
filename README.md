@@ -192,5 +192,6 @@ The following command will start it up and serve the files in the current direct
 Other TPDD Emulators that get's talked about more than this one (but I haven't tested yet) can be found [here](http://tandy.wiki/TPDD_server)
 
 ## OTHER HIGHLY RELEVANT INFO
-* I just like to tinker and it turns out that there are a lot of people like me. 99% of them seems to be active and part of the M100 mailing list: [Mailing List And Archive](http://lists.bitchin100.com/listinfo.cgi/m100-bitchin100.com). There's also a huge archive there that you can search through as soon as you have joined (free of charge). 
-* A wealth of knowledge can also be found on the Club100 [webpage](http://www.club100.org/) although it can be bit retro and hard to navigate at times.
+I just like to tinker and it turns out that there are a lot of people like me. 99% of them seems to be active and part of the M100 mailing list: [Mailing List And Archive](http://lists.bitchin100.com/listinfo.cgi/m100-bitchin100.com). There's also a huge archive there that you can search through as soon as you have joined (free of charge). 
+
+A wealth of knowledge can also be found on the Club100 [webpage](http://www.club100.org/) although it can be bit retro and hard to navigate at times.
