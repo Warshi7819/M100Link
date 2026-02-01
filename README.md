@@ -143,7 +143,7 @@ RUN
 > [!NOTE]
 > You may also load a program in binary format .BA or ascii .DO directly from the BASIC interpreter over serial and execute it when done by issuing the command: **LOAD "COM:58N1E",R**
 > 
-> Once a program is loaded you can also of course save it as a RAM file using the **SAVE "<filename>"** command. If you want to save the program as pure ASCII you can use the **SAVE "<filename",A** command. Where the trailing ,A specified exactly that.  
+> Once a program is loaded you can also of course save it as a RAM file using the **SAVE "filename"** command. If you want to save the program as pure ASCII you can use the **SAVE "filename",A** command. Where the trailing ,A specified exactly that.  
 
 ## Screenshot
 ![Action Photo](https://github.com/Warshi7819/M100Link/blob/main/images/example_usage.png)
