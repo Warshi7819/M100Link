@@ -14,7 +14,7 @@ When everything is hooked up it should look something like this:
 ![Cables](https://github.com/Warshi7819/M100Link/blob/main/images/cables.png)
 
 ## Before we start
-On your modern computer - Ensure that you have Python3 installed and that you have downloaded the following files from this project and placed them in a folder of your choice:
+On your modern computer - Ensure that you have Python3 installed (including the extra module pyserial) and that you have downloaded the following files from this project and placed them in a folder of your choice:
 * M100Link.py
 * ProgressBar.py
 * Send.py
